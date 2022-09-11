@@ -4,11 +4,24 @@
 {% include '_menu.html' %}
 
 <div class="container mt-5">
-<h1> Users: {{user.id}}</h1>
-<p> Full name: {{user.first_name}} {{user.last_name}}</p>
-<p> Email: {{user.email}} </p>
-<p>Created on: {{user.created_at}} </p>
-<p>Last updated on: {{user.updated_at}}</p>
+    <div class="d-flex">
+        <div class="p-3 flex-fill">
+                <div class="card text-bg-danger mb-3" style="max-width: 300rem;">
+                    <div class="card-body">
+                        <h1> Users: {{user.id}}</h1>
+                        <p> Full name: {{user.first_name}} {{user.last_name}}</p>
+                        <p> Email: {{user.email}} </p>
+                        <p>Created on: {{user.created_at}} </p>
+                        <p>Last updated on: {{user.updated_at}}</p>
+                    </div>
+            </div>
+        </div>
+        <div class="p-2 flex-fill">
+            <a href="/users"> Home </a>
+        </div>
+    </div>
+    <a href="/users/edit/{{user.id}}">Edit</a><a> | </a><a href="/delete/{{user.id}}">Delete</a>
+
 </div>
 
 

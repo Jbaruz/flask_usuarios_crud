@@ -1,7 +1,7 @@
 h1{
-    color: red;
+    color: pink;
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
 }
 table tr td{
     width: 50px;
@@ -11,7 +11,7 @@ table tr td{
 h1, .tablero{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
 }
 
 .color1 {
