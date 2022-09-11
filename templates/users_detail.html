@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block titulo %} Users details {% endblock %}
+{% block contenido %}
+{% include '_menu.html' %}
+
+<div class="container mt-5">
+<h1> Users: {{user.id}}</h1>
+<p> Full name: {{user.first_name}} {{user.last_name}}</p>
+<p> Email: {{user.email}} </p>
+<p>Created on: {{user.created_at}} </p>
+<p>Last updated on: {{user.updated_at}}</p>
+</div>
+
+
+{% endblock %}
